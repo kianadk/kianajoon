@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    justify-content: space-between;
+
+    flex-direction: column-reverse;
+    padding: 60px 20px;
+
+    @media (min-width: 500px) {
+        flex-direction: row;
+        padding: 100px 100px;
+    }
+}
+
+#picOfMe {
+    filter: sepia(90%) brightness(90%) blur(0.4px);
+
+    width: 200px;
+
+    @media (min-width: 500px) {
+        width: 400px;
+        margin-left: 160px;
+    }
+}
