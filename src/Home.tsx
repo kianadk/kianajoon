@@ -1,4 +1,3 @@
-import pic from './picOfMe.jpg';
 import './Home.css';
 
 function Home() {
@@ -8,7 +7,6 @@ function Home() {
             <p>Welcome in! I'm Kiana. I like to make cute stuff that works well. Most of it is made of bits and pixels.</p>
             <p>The 'joon' in my site name refers to the affectionate Persian honorific. If we're not on that level yet, maybe we will be someday :-) </p>
         </div>
-        <img src={pic} id='picOfMe'/>
     </div>;
 }
 

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Contact from './Contact';
 import Work from './Work';
+import Sizdah from './Sizdah';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Home';
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         path: "/work",
         element: <Work />
       },
+      {
+        path: "/sizdah-bedar-1405",
+        element: <Sizdah />
+      }
     ]
   },
 ]);
