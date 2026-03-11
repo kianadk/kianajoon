@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import Contact from './Contact';
 import Work from './Work';
 import Sizdah from './Sizdah';
 import reportWebVitals from './reportWebVitals';
@@ -19,17 +17,17 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/contact",
-        element: <Contact />
-      },
-      {
         path: "/work",
         element: <Work />
       },
       {
         path: "/sizdah-bedar-1405",
         element: <Sizdah />
-      }
+      },
+      {
+        path: "*",
+        element: <>This page does not exist</>
+      },
     ]
   },
 ]);
