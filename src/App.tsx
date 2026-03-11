@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className='min-h-full bg-background' data-theme='girlypop'>
+    <div className='min-h-full bg-background' data-theme='neutral'>
       <Outlet />
     </div>
   );

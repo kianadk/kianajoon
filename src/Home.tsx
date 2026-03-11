@@ -1,7 +1,7 @@
 
 
 function Home() {
-    return <div className='flex mx-auto max-w-sm md:max-w-md py-3 md:py-5'>
+    return <div className='flex mx-auto max-w-sm md:max-w-lg py-8 md:py-36'>
         <div className='flex flex-col gap-5'>
             <h2>hello there</h2>
             <p>Welcome in! I'm Kiana. I like to make cute stuff that works well. Most of it is made of bits and pixels.</p>

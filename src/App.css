@@ -67,7 +67,11 @@
 }
 
 [data-theme='neutral'] {
-  --background: beige
+  --background: beige;
+  --foreground: green;
+  --border: green;
+  --radius: 8px;
+  --ring: green;
 }
 
 [data-theme='girlypop'] {
