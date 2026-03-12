@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Work from './Work';
-import Sizdah from './Sizdah';
+import Sizdah from './sizdah-bedar/Sizdah';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Home';

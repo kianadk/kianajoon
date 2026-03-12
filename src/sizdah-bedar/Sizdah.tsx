@@ -6,60 +6,59 @@ import {
   import {
     MapPinIcon,
   } from "lucide-react"
-  import { Card } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import InfoCard from "./InfoCard";
 
 function Sizdah() {
     return (
-        <div className="flex flex-col items-center" >
-        <h1 className="text-4xl">Sizdah bedar at the park</h1>
-        <p>🌸 🌼 🌷</p>
-        <p>
+        <div className="flex flex-col items-center mx-10 py-5 md:mx-20 md:py-10" >
+        <h1 className="text-4xl font-sans text-center text-foreground">Sizdah bedar picnic</h1>
+        <p className="text-3xl my-4">🌸 🌷 🌼</p>
+        <p className="text-ring">
             Let's celebrate sizdah bedar at Kenneth Hahn
         </p>
         
-        <Card className="flex flex-row">
-            <div>
-                When? Saturday, April 4th
+        <Card className="flex flex-row px-4 my-4 bg-foreground text-background">
+            <div className="flex flex-col gap-2 p-4 text-center w-40">
+                <div className="text-lg">🗓️ When?</div> Saturday, April 4th
             </div>
             <Separator orientation="vertical" />
-            <div>
-                What time? 1pm - 7pm
-            </div>
+            <div className="flex flex-col gap-2 p-4 text-center w-40">
+                <div className="text-lg">🕑 What time?</div> 1pm - 7pm
+                </div>
             <Separator orientation="vertical" />
-            <div>
-                Where? <MapPinIcon/> Kenneth
+            <div className="flex flex-col gap-2 p-4 text-center w-40">
+                <div className="text-lg">📍 Where?</div>  Kenneth Hahn Park
             </div>
         </Card>
-        <Separator />
-        <div>
-            <Card>
-                <h4>Food & drinks</h4>
-                <p>kuku sabzi, kotlet, chai, sabzi khordan. Let me know if you have dietary restrictions or preferences. Contributions are welcome but not required. Hit me up if you want help deciding what to bring!</p>
-            </Card>
-            <Card>
-                <h4>Where to find us</h4>
+        <Separator className='max-w-2xl' />
+        <div className="grid grid-cols-2 gap-4 my-4 max-w-2xl">
+            <InfoCard icon="🧺" title="What to bring">
+                <p>A blanket or lawn chair · Sunscreen · A dish to share · Good vibes · Your favorite outdoor game · Layers for the afternoon breeze</p>
+            </InfoCard>
+            <InfoCard icon="👀" title="Where to find us">
                 <p>will update with picnic table location on the morning of</p>
-            </Card>
-            <Card>
-                <h4>Getting There</h4>
+            </InfoCard>
+            <InfoCard icon="🚌" title='Getting there'>
                 <p>Parking and carpool info, public transit</p>
-            </Card>
-            <Card>
-                <h4>Accessibility</h4>
-                <p>If you are not feeling well or have been in contact with someone who is not feeling well, please stay home!</p>
-            </Card>
+            </InfoCard>
+            <InfoCard icon="🤝" title='Accessibility'>
+                <p>If you are not feeling well or have been in contact with someone who is ill, please stay home!</p>
+            </InfoCard>
         </div>
-        <Card>
-            <h4>What to bring</h4>
-            <p>A blanket or lawn chair · Sunscreen · A dish to share · Good vibes · Your favorite outdoor game · Layers for the afternoon breeze</p>
-        </Card>
-        <Separator />
+        <div className='max-w-2xl'>
+            <InfoCard icon="🍓" title="Food & drinks">
+                <p>kuku sabzi, kotlet, chai, sabzi khordan. Let me know if you have dietary restrictions or preferences. Contributions are welcome but not required. Hit me up if you want help deciding what to bring!</p>
+            </InfoCard>
+        </div>
+        
+        <Separator className="my-4 max-w-2xl"/>
         <Card>
             <h2>Will you join us?</h2>
             <p>Please respond by April 1</p>
