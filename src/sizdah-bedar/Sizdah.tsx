@@ -20,7 +20,7 @@ function Sizdah() {
         <div className="flex flex-col items-center mx-10 py-5 md:mx-20 md:py-10" >
         <h1 className="text-4xl font-sans text-center text-foreground">Sizdah bedar picnic</h1>
         <p className="text-3xl my-4">🌸 🌷 🌼</p>
-        <p className="text-ring">
+        <p className="text-ring text-center">
             Let's celebrate sizdah bedar at Kenneth Hahn
         </p>
         
