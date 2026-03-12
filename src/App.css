@@ -12,6 +12,9 @@
   --dark-brown: #563429;
   --cream: #FAF6EE;
   --sage: #7A9E7E;
+  --blush: #E8A598;
+  --sand: #eec492;
+  --butter: #F2D680;
 }
 
 @font-face {
@@ -77,6 +80,8 @@
   --radius: 8px;
   --ring: var(--sage-dark);
   --sans: 'lemon';
+  --accent: var(--butter);
+  --muted-foreground: var(--kiwi)
 }
 
 [data-theme='girlypop'] {

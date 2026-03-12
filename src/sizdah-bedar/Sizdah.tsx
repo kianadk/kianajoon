@@ -59,8 +59,8 @@ function Sizdah() {
         </div>
         
         <Separator className="my-4 max-w-2xl"/>
-        <Card>
-            <h2>Will you join us?</h2>
+        <Card className="bg-foreground p-4 text-background w-full max-w-2xl">
+            <h2 className="font-sans text-2xl text-accent">Will you join us?</h2>
             <p>Please respond by April 1</p>
             <form>
                 <FieldGroup>
@@ -111,19 +111,20 @@ function Sizdah() {
                         <FieldLabel htmlFor="form-message">Dietary needs / dish you're bringing / message</FieldLabel>
                         <Textarea id="form-message" placeholder="E.g. 'Bringing a fruit salad! Vegetarian-friendly.' or 'Will need a chair — thanks!'" />
                     </Field>
-                    <Button type="submit">Submit</Button>
+                    <Button type="submit" className="bg-accent text-ring">Submit</Button>
                 </FieldGroup>
             </form>
         </Card>
-        <Card>
-            <h2>Guest list</h2>
+        <Card className="w-full max-w-2xl bg-white my-4 p-4">
+            <h2 className="text-2xl font-sans text-foreground">Guest list</h2>
             <div>
-                <div>
-                    <h3>Potato</h3>
-                    <p>March 15</p>
-                    <p>1 guest</p>
-                    <p>meow meow meow</p>
-                    <Badge>Attending</Badge>
+                <div className="flex justify-between">
+                    <div>
+                       <h3 className="text-lg">Potato</h3>
+                        <span className="flex text-xs text-ring py-2 gap-2"><p>March 15</p> • <p>1 guest</p></span>
+                        <p className="text-border text-xs">meow meow meow</p> 
+                    </div>
+                    <Badge className="bg-muted-foreground text-ring">Attending</Badge>
                 </div>
             </div>
         </Card>
