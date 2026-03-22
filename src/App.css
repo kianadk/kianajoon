@@ -81,7 +81,7 @@
   --ring: var(--sage-dark);
   --sans: 'lemon';
   --accent: var(--butter);
-  --muted-foreground: var(--kiwi)
+  --muted-foreground: var(--kiwi);
 }
 
 [data-theme='girlypop'] {
