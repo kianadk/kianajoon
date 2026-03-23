@@ -7,10 +7,10 @@ type InfoCardProps = {
 }
 
 function InfoCard({ children, title, icon }: InfoCardProps) {
-    return <Card className="p-4 bg-white">
+    return <Card className="p-4 bg-white text-xl">
         <div className="flex gap-2 align-middle items-center">
-           <span className="text-xl">{icon}</span>
-           <h4 className="text-foreground">{title}</h4> 
+           <span className="text-4xl">{icon}</span>
+           <h4 className="text-foreground text-2xl font-bold">{title}</h4> 
         </div>
         
         {children}

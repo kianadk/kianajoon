@@ -5,28 +5,28 @@ import InfoCard from "./InfoCard";
 
 function Sizdah() {
     return (
-        <div className="flex flex-col items-center mx-10 py-5 md:mx-20 md:py-10" >
-        <h1 className="text-4xl font-sans text-center text-foreground">Sizdah bedar picnic</h1>
-        <p className="text-3xl my-4">🌸 🌷 🌼</p>
-        <p className="text-ring text-center">
+        <div className="flex flex-col items-center mx-10 py-5 md:mx-10 md:py-10" >
+        <h1 className="text-6xl font-sans text-center text-foreground">Sizdah bedar picnic</h1>
+        <p className="text-5xl my-4">🌸 🌷 🌼</p>
+        <p className="text-xl text-ring text-center">
             Hello friends! I'm hosting a picnic in celebration of <a className="text-muted-foreground underline" href="https://en.wikipedia.org/wiki/Sizdah_Be-dar" target="_blank" rel="noopener noreferrer">sizdah bedar</a>. The plan is to spend the day at Kenneth Hahn yapping, snacking, and engaging in tomfoolery. Come through for as long or short as you wish. RSVP <a className="text-muted-foreground underline" href="https://forms.gle/LVzDtEqBJS968uCz9">here</a> by April 1st!
         </p>
         
-        <Card className="flex flex-row px-4 my-4 bg-foreground text-background">
-            <div className="flex flex-col gap-2 p-4 text-center w-40">
-                <div className="text-lg">🗓️ When?</div> Saturday, April 4th
+        <Card className="flex flex-row px-4 my-4 w-full bg-foreground text-background">
+            <div className="flex flex-col gap-2 p-4 text-center w-1/3 text-2xl">
+                <div className="text-2xl">🗓️ When?</div> Saturday, April 4th
             </div>
             <Separator orientation="vertical" />
-            <div className="flex flex-col gap-2 p-4 text-center w-40">
-                <div className="text-lg">🕑 What time?</div> 1pm - 7pm
+            <div className="flex flex-col gap-2 p-4 text-center w-1/3 text-2xl">
+                <div className="text-2xl">🕑 What time?</div> 1pm - 7pm
                 </div>
             <Separator orientation="vertical" />
-            <div className="flex flex-col gap-2 p-4 text-center w-40">
-                <div className="text-lg">📍 Where?</div>  Kenneth Hahn Park
+            <div className="flex flex-col gap-2 p-4 text-center w-1/3 text-2xl">
+                <div className="text-2xl">📍 Where?</div>  Kenneth Hahn Park
             </div>
         </Card>
         <Separator className='max-w-2xl' />
-        <div className='max-w-2xl my-4'>
+        <div className='my-4'>
             <InfoCard icon="🍓" title="Food & drinks">
                 <p>I will be providing some food that embodies springtime for me (+ paper plates and cutlery) </p>
                 <ul className="text-center">
@@ -38,7 +38,7 @@ function Sizdah() {
                 <p>I feel blessed to know most of your tummys pretty well, but lmk if you have any dietary restrictions. Contributions are welcome but not required. Lmk if you want help deciding what to bring!</p>
             </InfoCard>
         </div>
-        <div className="grid grid-cols-2 gap-4 max-w-2xl">
+        <div className="grid grid-cols-2 gap-4">
             <InfoCard icon="👀" title="Where to find us">
                 <p>We'll be posted up at Kenneth Hahn Park. Hoping to snag a table S/SE of the lake. I will send out an update on the morning of.</p>
                 <p>A couple map options for reference:</p>
@@ -76,8 +76,8 @@ function Sizdah() {
                 <p>There is <a href="https://pw.lacounty.gov/core-service-areas/transportation/the-link-baldwin-hills-parklands/">a shuttle</a> that runs from the Expo/La Cienega metro station to the park.</p>
             </InfoCard>
         </div>
-        <Button className="bg-foreground p-4 text-background fixed bottom-4 right-6 p-6 rounded-full">
-            <a className="font-sans text-2xl text-accent" href="https://forms.gle/LVzDtEqBJS968uCz9" target="_blank" rel="noopener noreferrer">RSVP here</a>
+        <Button className="bg-foreground p-4 text-background fixed bottom-4 right-6 p-8 rounded-full">
+            <a className="font-sans text-3xl text-accent" href="https://forms.gle/LVzDtEqBJS968uCz9" target="_blank" rel="noopener noreferrer">RSVP here</a>
         </Button>
     </div>);
 }
