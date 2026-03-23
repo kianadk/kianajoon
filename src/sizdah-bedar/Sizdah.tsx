@@ -35,7 +35,7 @@ function Sizdah() {
                     <li><b>kotlet</b><br/> fried patties of meat, potato, and onion </li>
                     <li><b>chai & sheerini</b><br/> black tea and small sweets</li>
                 </ul>
-                <p>I feel blessed to know most of your tummys pretty well, but lmk if you have any dietary restrictions. Contributions are welcome but not required. Lmk if you want help deciding what to bring!</p>
+                <p>I feel blessed to know most of your tummys pretty well, but lmk if you have any dietary restrictions. Contributions are welcome but not required. Lmk if you want help deciding something to bring!</p>
             </InfoCard>
         </div>
         <div className="grid grid-cols-2 gap-4">
