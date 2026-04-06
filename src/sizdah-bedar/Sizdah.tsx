@@ -62,7 +62,7 @@ function Sizdah() {
                     Forough Farrokhzad
                 </p>
             </div>
-            <img src={PoemImage} className="w-2/5" alt="Forough Farrokhzad's poem" />
+            <img src={PoemImage} className="w-2/5 border-6 border-foreground rounded-md" alt="Forough Farrokhzad's poem" />
             </div>
     </div>);
 }
